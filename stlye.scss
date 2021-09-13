@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+//******************************************* Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap");
+
+//******************************************* Fonts
+$fontMont: "Montserrat", sans-serif;
+$fontPoppin: "Poppins", sans-serif;
+#section-big {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  .header-sect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 155px;
+
+    .nav-div {
+      nav {
+        display: flex;
+
+        .home-txt {
+          color: #fa4a0c; // Come here again!!
+        }
+        li {
+          padding: 0 45px;
+          font-family: $fontMont;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          color: #252b42;
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          &:hover {
+            color: #fa4a0c;
+          }
+        }
+      }
+    }
+  }
+}
+//******************************************* Header Finish Here!
+
+.big-image {
+  background-image: url(./icons/Rectangle48.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 100%;
+  height: 67vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    font-family: $fontMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #f7f7f7;
+
+    margin: 15px 0;
+  }
+  h1 {
+    font-family: $fontPoppin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+
+    margin: 15px 0;
+  }
+  P {
+    font-family: $fontMont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #f7f7f7;
+
+    margin: 15px 0;
+  }
+
+  .big-image-btn {
+    display: flex;
+    justify-content: center;
+
+    margin: 35px 0;
+
+    .btn-red {
+      background: #fa4a0c;
+      border: 1px solid #fa4a0c;
+      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+      border-radius: 30px;
+      padding: 10px 48.5px;
+      & {
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+        color: #ffffff;
+
+        margin: 0 15px;
+      }
+    }
+    .btn-white {
+      background: none;
+      border: 1px solid white;
+      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+      border-radius: 30px;
+      padding: 10px 48.5px;
+      & {
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+        color: #ffffff;
+
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+.phone-img {
+  position: absolute;
+  left: 476px;
+  top: 530px;
+  .img-one {
+    position: relative;
+    width: 550px;
+    left: 76px;
+    z-index: 10;
+  }
+  .img-two {
+    position: relative;
+    width: 300px;
+    right: 165px;
+    bottom: 60px;
+  }
+}
+
+//******************************************* Header Finish Here!
+#section-big {
+  .only-vh {
+    height: 65.15vh;
+  }
+  h1 {
+    font-family: $fontPoppin;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .first-ddiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 500px;
+    }
+    .div-txt {
+      h3 {
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+        color: #fa4a0c;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+      h1 {
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        color: #252b42;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        text-align: left;
+        margin: 15px 0;
+      }
+      p {
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 38px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+    }
+  }
+}
+
+.big-imagee {
+  background-image: url(./icons/backggrondimg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 100%;
+  height: 67vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    font-family: $fontMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #f7f7f7;
+
+    margin: 15px 0;
+  }
+  h1 {
+    font-family: $fontPoppin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+
+    margin: 15px 0;
+  }
+  P {
+    font-family: $fontMont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #f7f7f7;
+
+    margin: 15px 0;
+  }
+  .big-image-btn {
+    display: flex;
+    justify-content: center;
+
+    margin: 35px 0;
+
+    .btn-red {
+      background: #fa4a0c;
+      border: 1px solid #fa4a0c;
+      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+      border-radius: 10px;
+      padding: 10px 25.5px;
+      & {
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+        color: #ffffff;
+
+        margin: 0 15px;
+      }
+    }
+    .btn-white {
+      background: none;
+      border: 1px solid white;
+      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+      border-radius: 10px;
+      padding: 10px 25.5px;
+      & {
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+        color: #ffffff;
+
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin: 0px 15px;
+  }
+}
