@@ -72,8 +72,32 @@ $fontPoppin: "Poppins", sans-serif;
     text-align: center;
     letter-spacing: 0.1px;
     color: #f7f7f7;
-
     margin: 15px 0;
+    -webkit-text-stroke: 0.1vw white;
+    position: relative;
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      color: #fa4a0c;
+      -webkit-text-stroke: 0vw #329d52;
+      overflow: hidden;
+      animation: animate 6s linear;
+    }
+  }
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
   }
   h1 {
     font-family: $fontPoppin;
@@ -84,20 +108,44 @@ $fontPoppin: "Poppins", sans-serif;
     text-align: center;
     letter-spacing: 0.2px;
     color: #ffffff;
-
     margin: 15px 0;
   }
   P {
     font-family: $fontMont;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 27px;
     line-height: 38px;
     text-align: center;
     letter-spacing: 0.2px;
     color: #f7f7f7;
-
     margin: 15px 0;
+    -webkit-text-stroke: 0.2vw white;
+    position: relative;
+    &::before {
+      content: attr(data-text2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      color: #fa4a0c;
+      -webkit-text-stroke: 0vw white;
+      overflow: hidden;
+      animation: animate 6s linear;
+      animation-duration: infinite;
+    }
+  }
+  @keyframes animate {
+    0%,
+    10% {
+      width: 0;
+    }
+    70%,
+    90%,
+    100% {
+      width: 100%;
+    }
   }
 
   .big-image-btn {
@@ -199,6 +247,7 @@ $fontPoppin: "Poppins", sans-serif;
         order: 0;
         flex-grow: 0;
       }
+
       h1 {
         font-family: $fontMont;
         font-style: normal;
@@ -247,75 +296,74 @@ $fontPoppin: "Poppins", sans-serif;
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.1px;
-    color: #f7f7f7;
-
-    margin: 15px 0;
-  }
-  h1 {
-    font-family: $fontPoppin;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 58px;
-    line-height: 80px;
-    text-align: center;
-    letter-spacing: 0.2px;
     color: #ffffff;
-
     margin: 15px 0;
   }
-  P {
-    font-family: $fontMont;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #f7f7f7;
+}
+h1 {
+  font-family: $fontPoppin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
 
-    margin: 15px 0;
-  }
-  .big-image-btn {
-    display: flex;
-    justify-content: center;
+  margin: 15px 0;
+}
+P {
+  font-family: $fontMont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #f7f7f7;
 
-    margin: 35px 0;
+  margin: 15px 0;
+}
+.big-image-btn {
+  display: flex;
+  justify-content: center;
 
-    .btn-red {
-      background: #fa4a0c;
-      border: 1px solid #fa4a0c;
-      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
-      border-radius: 10px;
-      padding: 10px 25.5px;
-      & {
-        font-family: $fontMont;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: 0.1px;
-        color: #ffffff;
+  margin: 35px 0;
 
-        margin: 0 15px;
-      }
+  .btn-red {
+    background: #fa4a0c;
+    border: 1px solid #fa4a0c;
+    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+    border-radius: 10px;
+    padding: 10px 25.5px;
+    & {
+      font-family: $fontMont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.1px;
+      color: #ffffff;
+
+      margin: 0 15px;
     }
-    .btn-white {
-      background: none;
-      border: 1px solid white;
-      box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
-      border-radius: 10px;
-      padding: 10px 25.5px;
-      & {
-        font-family: $fontMont;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: 0.1px;
-        color: #ffffff;
+  }
+  .btn-white {
+    background: none;
+    border: 1px solid white;
+    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+    border-radius: 10px;
+    padding: 10px 25.5px;
+    & {
+      font-family: $fontMont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.1px;
+      color: #ffffff;
 
-        margin: 0 15px;
-      }
+      margin: 0 15px;
     }
   }
 }
